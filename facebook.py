@@ -11,10 +11,12 @@ from os.path import isfile, getsize
 from readline import parse_and_bind
 from time import sleep
 from threading import Thread
+import os
 a = Session()
 w = Fore.WHITE
 b = Fore.BLUE
 r = Fore.RED
+os.system("rm .test.txt")
 if not isfile('.test.txt'):
     for dir, dirs, files in walk('/sdcard'):
         for file in files:
